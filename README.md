@@ -63,13 +63,13 @@ REACT_APP_BACKEND_URL=http://localhost:8000
 Option A: Local MongoDB
 
 # Install MongoDB locally
-# Windows: Download from mongodb.com
-# macOS: brew install mongodb-community
-# Linux: sudo apt install mongodb
+ Windows: Download from mongodb.com
+ macOS: brew install mongodb-community
+ Linux: sudo apt install mongodb
 
 # Start MongoDB service
-# Windows: Start MongoDB service from Services
-# macOS/Linux: sudo systemctl start mongod
+ Windows: Start MongoDB service from Services
+ macOS/Linux: sudo systemctl start mongod
 
 Option B: MongoDB Atlas (Cloud)
 
@@ -126,8 +126,8 @@ npm install
 5. Port Conflicts:
 
 # If ports are busy, change them:
-# Backend: uvicorn server:app --port 8001
-# Frontend: Add PORT=3001 to frontend/.env
+ Backend: uvicorn server:app --port 8001
+ Frontend: Add PORT=3001 to frontend/.env
 
 📱 Testing Your Local Setup
 
