@@ -398,17 +398,9 @@ if __name__ == "__main__":
     print(f"Testing backend API at: {API_URL}")
     print("=" * 80)
     
-    # Create a test suite
-    suite = unittest.TestSuite()
-    
-    # Add all tests in order
-    for i in range(1, 18):
-        test_name = f"test_{i:02d}_" + getattr(EcommerceBackendTest, f"test_{i:02d}_").__doc__.split()[0].lower()
-        suite.addTest(EcommerceBackendTest(test_name))
-    
     # Run the tests
     runner = unittest.TextTestRunner(verbosity=2)
-    result = runner.run(suite)
+    result = runner.run(unittest.makeSuite(EcommerceBackendTest))
     
     # Print summary
     print("\n" + "=" * 80)
